@@ -9,7 +9,7 @@
 <h3>Custom login page</h3>
 <form:form action="${pageContext.request.contextPath}/authenticateUser" method="post">
     <c:if test="${param.error !=null}">
-        <i>Invalid credentials</i>
+        <i>Error: Invalid credentials</i>
     </c:if>
     <p>
         User name: <input type="text" name="username" />
